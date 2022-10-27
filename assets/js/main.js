@@ -25,16 +25,16 @@ const northeastNationalParkOptions = nationalParkOptions[3].parksInRegion[Math.f
 
 //takes the users typed value and presents options and color corrdinates
  const parkRegion = document.querySelector('input').value.toLowerCase();
- if (parkRegion === 'West'){
+ if (parkRegion === 'west'){
     document.querySelector('h2').innerHTML = westNationalParkOptions
     document.querySelector('h2').style.color = 'RGB(253,160,40)'
- }else if(parkRegion === 'Midwest'){
+ }else if(parkRegion === 'midwest'){
     document.querySelector('h2').innerHTML = midwestNationalParkOptions
     document.querySelector('h2').style.color = 'RGB(23,161,55)'
- }else if(parkRegion === 'South'){
+ }else if(parkRegion === 'south'){
     document.querySelector('h2').innerHTML = southNationalParkOptions
     document.querySelector('h2').style.color = 'RGB(19, 126, 207)'
-}else if (parkRegion === 'Northeast'){
+}else if (parkRegion === 'northeast'){
     document.querySelector('h2').innerHTML = northeastNationalParkOptions
     document.querySelector('h2').style.color = 'RGB(240,36,43)'
  }else{
