@@ -24,7 +24,7 @@ const northeastNationalParkOptions = nationalParkOptions[3].parksInRegion[Math.f
 
 
 //takes the users typed value and presents options and color corrdinates
- const parkRegion = document.querySelector('input').value
+ const parkRegion = document.querySelector('input').value.toLowerCase();
  if (parkRegion === 'West'){
     document.querySelector('h2').innerHTML = westNationalParkOptions
     document.querySelector('h2').style.color = 'RGB(253,160,40)'
