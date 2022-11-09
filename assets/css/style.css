@@ -1,24 +1,87 @@
-/*Flex settings*/
-body {
+
+/*Structure*/
+html, .nationalParkBundle, .region{
     display: flex;
     flex-direction: column;
 }
+
+body {
+    align-self: center;
+    height: 50vh;
+}
+.nationalParkBundle{
+    width: 80vw;
+    height: 96vh;
+    justify-content: center;
+    align-items: center;
+    /* margin: .6rem 0 0 0; */
+
+}
+.nationalParkBundle * {
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+/*Skin*/
+/*Setting background colors*/
+body {
+    background-image: linear-gradient(to bottom left, green,rgb(15, 58, 15));
+}
+.nationalParkBundle{
+    background-color: white;
+}
+
+
+
+
+
+
+/*Content*/
+
 /*Image sizing*/
 img {
     height: 50%;
-    width: 50%;
+    width: 80%;
 }
-/*Flex setting to center content*/
-h1, .region {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/*Setting space around top & bottom of form*/
-input {
-    margin: 2rem 0;
-}
-/*Bolding p elements*/
+/*Bolding p elements & Setting width */
 p {
     font-weight: bold;
+    width: 45%;
+}
+/*Aligning to be centered with page*//*Aligning the warning message that populates after wrong input in form */
+p,h1, h2 {
+    text-align: center;
+}
+
+
+/*Responsiveness for Devices*/
+
+@media only screen and (min-width: 416px) and (max-width: 740px) {
+    h1 {
+        /* margin: 2.5em 0 0 0 ; */
+        font-size: 1.2em;
+    }
+    p {
+        font-size: .8em;
+        width: 100%;
+    } img {
+        height: 40vh;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+    
+}
+
+@media only screen and (min-width: 568px) and (max-width: 599px) {
+}
+
+
+@media only screen and (max-width: 415px) {
+    img {
+        width: 100%;
+    }
 }
